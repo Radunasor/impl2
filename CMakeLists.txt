@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.21.1)
 
-project(impl1 LANGUAGES C CXX VERSION 4.5.6)
+project(impl2 LANGUAGES C CXX VERSION 4.5.6)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 11)
 
