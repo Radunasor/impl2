@@ -6,7 +6,7 @@
 
 static void print_impl()
 {
-    printf("fisrt implementation! \n");
+    printf("second implementation! \n");
 }
 
 Iimpl *get_impl_instance()
