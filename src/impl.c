@@ -1,9 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 #include "impl.h"
 
-static void print_impl(int a, int b)
+static void print_impl()
 {
-    printf("second implementation! \n");
+    printf("fisrt implementation! \n");
 }
 
 Iimpl *get_impl_instance()
@@ -12,6 +15,10 @@ Iimpl *get_impl_instance()
 
     if (impl)
         return impl;
+
+    impl = malloc(sizeof(Iimpl));
+
+    memset(impl, 0, sizeof(Iimpl));
 
     impl->print_impl = print_impl;
 
